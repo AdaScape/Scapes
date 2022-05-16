@@ -1,0 +1,101 @@
+body {
+    font-size: 1rem !important;
+    font-family: 'roboto', 'segoe UI', 'tahoma';
+}
+
+.bg-main {
+    background: #65b35d !important;
+    color: #fff !important;
+}
+
+.bg-pr-secondary {
+    background: #eae0cb !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus {
+    color: #192e17;
+    background: none;
+    font-weight: 600;
+}
+
+.navbar {
+    padding: 1rem 1rem;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    box-shadow: 0 1px 11px #22741a !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 1.25rem;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.about-info {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card {
+    border-radius: 15px !important;
+}
+
+.about-card-body {
+    padding: 50px !important;
+}
+
+.about-background {
+    background: url(../img/ADAScape1.png);
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: -11% 125%;
+    background-blend-mode: hue;
+}
+
+.card-image {
+    background: #a2c19e;
+}
+
+.card-biomes {
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */
+}
+
+.footer-info {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+
+.faqs-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.form-control {
+    border: 0px !important;
+    transition: background 0s ease-out !important;
+}
+
+.form-control,
+.is-focused .form-control {
+    background-image: linear-gradient(to top, #99a11f 2px, rgba(46, 125, 50, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+}
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}

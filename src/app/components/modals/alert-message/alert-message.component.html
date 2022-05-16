@@ -1,0 +1,22 @@
+<div class="modal-angular">
+
+    <div class="modal-header">
+        <h4 [innerHtml]="data['Title'] | SafeHtml: 'html'"></h4>
+    </div>
+
+    <div class="modal-body">
+        <!-- <div class="mat-dialog-title" fxLayout="row">
+          <div fxFlex fxLayoutAlign="left center">
+              <h4 style="margin:0px;" [innerHtml]="data['Title'] | SafeHtml: 'html'"></h4>
+          </div>
+      </div> -->
+        <div class="dialog-content" fxLayout="column" fxFill>
+            <div [innerHtml]="data['Body'] | SafeHtml: 'html'">
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center" style="margin-top: 24px;">
+                <button fxFLex class="btn btn-outline-primary btn-lg btn-block" [mat-dialog-close]=""
+                    class="btn btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

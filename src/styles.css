@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+mat-dialog-container {
+  padding: 0px !important;
+}
+
+mat-dialog-content {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* .mat-dialog-title{
+    background-color: #3f51b5;
+    color: white;
+    padding: 24px;
+    margin: 0px!important;
+} */
+
+/* .dialog-content {
+  padding: 24px;
+} */
+
+mat-dialog-actions {
+  padding: 0px !important;
+}
+
+.removeErrorField .mat-form-field-wrapper {
+  padding-bottom: 0px !important;
+}
+
+b,
+strong {
+  font-weight: bold !important;
+}
+
+.mat-dialog-title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.ql-tooltip.ql-editing {
+  left: 40% !important;
+  top: 40% !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .ql-tooltip.ql-editing {
+    left: 10% !important;
+    top: 40% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .ql-tooltip.ql-editing {
+    left: 20% !important;
+    top: 40% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .ql-tooltip.ql-editing {
+    left: 25% !important;
+    top: 40% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .ql-tooltip.ql-editing {
+    left: 30% !important;
+    top: 40% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .ql-tooltip.ql-editing {
+    left: 40% !important;
+    top: 40% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+img.avatar-content {
+  object-fit: cover !important;
+}
+
+.mat-column-expandedDetail  table.mat-table > thead > tr > th.mat-header-cell{
+  background: #385c88 !important;
+  border-right-color: #122a31 !important;
+}
