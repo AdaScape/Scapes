@@ -17,7 +17,6 @@ import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 
 import { TranslateModule } from '@ngx-translate/core';
 
-import { QuillModule } from 'ngx-quill';
 
 
 
@@ -45,7 +44,6 @@ import { AlertMessageComponent } from './modals/alert-message/alert-message.comp
     AngularPaginatorModule,
     FormsModule,
     ReactiveFormsModule,
-    QuillModule,
     PipesModule,
     NgxMatSelectSearchModule,
     TranslateModule,

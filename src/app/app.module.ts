@@ -25,9 +25,6 @@ import { PipesModule } from './pipes/pipes.module';
 
 import { ApplicationService } from './services/Application/application.service';
 
-import { QuillModule } from 'ngx-quill';
-import { SignalRModule } from 'ng2-signalr';
-import { SignalRConfiguration } from 'ng2-signalr';
 import { NgxInfiniteScrollerModule } from 'ngx-infinite-scroller';
 import { BrowserModule } from '@angular/platform-browser';
 import { ScrollingModule } from '@angular/cdk/scrolling';
@@ -41,15 +38,6 @@ import { SalesComponent } from './charts/sales/sales.component';
 import { FloorListedComponent } from './charts/floor-listed/floor-listed.component';
 
 
-export function createConfig(): SignalRConfiguration {
-  const c = new SignalRConfiguration();
-  c.hubName = 'Notifications';
-  c.qs = { user: 'client' };
-  c.logging = true;
-  return c;
-}
-
-// export let options: Partial<IConfig> | (() => Partial<IConfig>);
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -82,32 +70,6 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
         deps: [HttpClient]
       }
     }),
-    QuillModule.forRoot({
-      modules: {
-        toolbar: [
-          ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-          ['blockquote', 'code-block'],
-
-          [{ 'header': 1 }, { 'header': 2 }],               // custom button values
-          [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-          [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
-          [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
-          [{ 'direction': 'rtl' }],                         // text direction
-
-          [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-          [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-          [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-          [{ 'font': [] }],
-          [{ 'align': [] }],
-
-          ['clean'],                                         // remove formatting button
-
-          ['link', 'image', 'video']
-        ]
-      }
-    }),
-    SignalRModule.forRoot(createConfig),
     NgxMaskModule.forRoot(options),
     CurrencyMaskModule
   ],

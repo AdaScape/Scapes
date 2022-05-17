@@ -1,5 +1,5 @@
 {
-    "name": "material-dashboard-angular",
+    "name": "scapes",
     "version": "2.3.8",
     "license": "MIT",
     "scripts": {
@@ -32,10 +32,11 @@
         "@angular/platform-browser-dynamic": "8.0.0",
         "@angular/platform-server": "8.0.0",
         "@angular/router": "8.0.0",
+        "@emurgo/cardano-serialization-lib-nodejs": "^10.0.4",
         "@fortawesome/fontawesome-free": "^5.15.2",
         "@ngx-translate/core": "^11.0.1",
         "@ngx-translate/http-loader": "^4.0.0",
-        "@types/signalr": "^2.2.35",
+
         "@types/underscore": "^1.9.3",
         "ajv": "6.10.0",
         "angular-datatables": "^8.0.0",
@@ -62,7 +63,7 @@
         "moment": "2.24.0",
         "ng-scroll-spy": "^2.0.0",
         "ng2-currency-mask": "^5.3.1",
-        "ng2-signalr": "^8.0.2",
+
         "ngx-avatar": "^3.7.0",
         "ngx-infinite-scroller": "^0.5.0",
         "ngx-mask": "^8.1.2",
@@ -70,7 +71,7 @@
         "ngx-number-validation": "^8.4.5",
         "ngx-numeral": "0.0.1-beta.0",
         "ngx-pagination": "^4.1.0",
-        "ngx-quill": "^7.3.1",
+
         "ngx-tooltip": "0.0.9",
         "perfect-scrollbar": "1.1.0",
         "popper.js": "1.15.0",
@@ -78,7 +79,7 @@
         "roboto-fontface": "^0.10.0",
         "rxjs": "^6.5.2",
         "rxjs-compat": "6.5.2",
-        "signalr": "^2.4.1",
+
         "underscore": "^1.9.1",
         "web-animations-js": "2.3.1",
         "zone.js": "0.9.1"
