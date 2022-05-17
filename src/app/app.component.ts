@@ -18,7 +18,7 @@ declare const TradingView: any;
 export class AppComponent {
   Highcharts: typeof Highcharts = Highcharts;
 
-  PolicyID: any = "8623e9c3d9f018d2b3fadfdab03767d70793552ce63f36ecb9b9d98c";
+  PolicyID: any = "";
   FloorData: any[] = [];
   updateFlag: boolean = false;
   chartOptions: Highcharts.Options = {
