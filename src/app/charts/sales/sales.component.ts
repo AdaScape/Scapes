@@ -17,7 +17,7 @@ export class SalesComponent implements OnInit {
 
 
   @Input() PolicyID = '';
- 
+
   Highcharts3: typeof Highcharts = Highcharts;
 
   FloorData: any[] = [];
@@ -142,16 +142,18 @@ export class SalesComponent implements OnInit {
   ngOnInit() {
 
     interval(2000).subscribe(() => {
-      if(this.LastPolicyID !== this.PolicyID){
-        this.LastPolicyID =  this.PolicyID;
+      if (this.LastPolicyID !== this.PolicyID) {
+        this.LastPolicyID = this.PolicyID;
         this.FloorData = [];
         this.chartOptions3.series[0] = {
           type: 'scatter',
           data: this.FloorData
         }
-  
+
       }
-      this.getProjectDetails(this.PolicyID);
+      if (this.PolicyID !== "") {
+        this.getProjectDetails(this.PolicyID);
+      }
       this.updateFlag = true;
     });
 
@@ -167,7 +169,7 @@ export class SalesComponent implements OnInit {
       this.ProjectDetails = data;
 
 
-  
+
 
       let ListedCnt = _.size(this.ProjectDetails);
       let DataBuilder = [];

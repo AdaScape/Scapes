@@ -98,17 +98,19 @@ export class FloorComponent implements OnInit {
 
     // });
     interval(1000).subscribe(() => {
-      if(this.LastPolicyID !== this.PolicyID){
-        this.LastPolicyID =  this.PolicyID;
+      if (this.LastPolicyID !== this.PolicyID) {
+        this.LastPolicyID = this.PolicyID;
         this.FloorData = [];
         this.chartOptions.series[0] = {
           type: 'scatter',
           data: this.FloorData
         }
-  
+
       }
-      
-      this.getProjectDetails(this.PolicyID);
+
+      if (this.PolicyID !== "") {
+        this.getProjectDetails(this.PolicyID);
+      }
       this.updateFlag = true;
     });
 
@@ -122,7 +124,7 @@ export class FloorComponent implements OnInit {
   getProjectDetails(PolicyID) {
     this.ApplicationServiceObject.GetJPGFloorByPolicyID(PolicyID).subscribe(data => {
       this.ProjectDetails = data;
-   
+
 
       let RealFloor = this.ProjectDetails.floor / 1000000;
       let DataBuilder = [];

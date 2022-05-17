@@ -47,7 +47,7 @@ export class ListedComponent implements OnInit {
         lineWidth: 6,
         color: "#65b35d"
       },
-    }, 
+    },
     credits: {
       enabled: false
     },
@@ -95,16 +95,18 @@ export class ListedComponent implements OnInit {
 
     // });
     interval(1000).subscribe(() => {
-      if(this.LastPolicyID !== this.PolicyID){
-        this.LastPolicyID =  this.PolicyID;
+      if (this.LastPolicyID !== this.PolicyID) {
+        this.LastPolicyID = this.PolicyID;
         this.FloorData = [];
         this.chartOptions2.series[0] = {
           type: 'scatter',
           data: this.FloorData
         }
-  
+
       }
-      this.getProjectDetails(this.PolicyID);
+      if (this.PolicyID !== "") {
+        this.getProjectDetails(this.PolicyID);
+      }
       this.updateFlag = true;
     });
 
